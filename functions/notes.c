@@ -5,11 +5,8 @@ char name[50], place[50], verb[50];
 int add(int numOne, int numTwo){
     return numOne+numTwo;
 }
-const char* word(char type[50]){
-    char choice[50];
-    printf("Please give me a %s:\n", type);
-    scanf("%s", choice);
-    return choice;
+void due(char assignment[50], char day[20]){
+    printf("The %s assignment is due %s\n", assignment, day);
 }
 
 int main(void){
@@ -18,7 +15,8 @@ int main(void){
     //add(num,10);
     //add(8,1);
     //printf("%d",add(72,5));
-
-
+    due("Functions Notes", "Today");
+    due("Hello World Update", "Tomorrow");
+    due("Fincancial Calulator Update", "Friday");
     return 0;
 }
