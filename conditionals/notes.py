@@ -64,11 +64,9 @@ if num <10:
     if num ==8:
         print("This prints at 8")
     else:
-        print("The number is less than 10")
+        if num == 4:
+            print("There are only enough cookies left for me. . . sorry")
+        else:
+            print("The number is less than 10")
 else:
     print("The number is bigger than 10")
-
-#How do you write an if statement in C?
-#How do you write else statements in C?
-#How do you write elif/ else if statements in C?
-#How do you write the 3 logical operators in C?
