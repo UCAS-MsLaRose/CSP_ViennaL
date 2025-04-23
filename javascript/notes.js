@@ -13,7 +13,8 @@ function change(){
 }
 
 function hello(){
-    document.getElementById("title").innerHTML = "Hello World!"
+    let name = window.prompt("What is your name?", "Koro Sensei")
+    document.getElementById("title").innerHTML = "Hello " + name + "!"
 }
 function hover(){
     document.getElementById("img").src = "https://www.mountain-forecast.com/system/images/24500/large/Mount-Timpanogos.jpg?1532401039"
@@ -21,12 +22,10 @@ function hover(){
 function leave(){
     document.getElementById("img").src = "https://i.etsystatic.com/37394532/r/il/27e6c7/5018857984/il_fullxfull.5018857984_l9h3.jpg"
 }
-let current = document.getElementById("meme").style.display
-function hidden(){
-    if (current === "none"){
-       document.getElementById("meme").style.display = "block" 
-    }else{
-        document.getElementById("meme").style.display = "none"
-    }
-    
+
+function pop(){
+    window.alert("Really don't click that!")
+}
+function show(){
+    document.getElementById("lost").style.display = "block"
 }
